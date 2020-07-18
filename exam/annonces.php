@@ -20,7 +20,12 @@ while ($data = $reponse->fetch())
     ?>
     <h1><?php echo('Titre : '.$data['titre']); ?></h1>
     <img height="100px" src="<?php echo($data['image_link'])?>">
+    <p><?php echo('Contenu : '.$data['contenu']); ?></p>
+    <caption><?php echo('Auteur : '.$data['nom_prenom_utilisateur']); ?></caption>
+    
+
     <?php
+    
 }
 $reponse->closeCursor()
 ?>
